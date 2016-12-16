@@ -6,11 +6,11 @@
 
 
 .btn {
-  color: lighten(@text-color, 6%);
+  color: @text-color-subtle;
   background-color: @button-background-color;
   &:hover,
   &:focus {
-    color: @text-color-highlight;
+    color: @base-background-color;
     background-color: @button-background-color-hover;
   }
   &:active {
@@ -37,7 +37,7 @@
 .btn.btn-error   { .btn-color(@background-color-error); }
 
 .btn-color(@bg) {
-  color: @text-color-selected;
+  color: @base2;
   background-color: @bg;
   &:hover,
   &:focus {

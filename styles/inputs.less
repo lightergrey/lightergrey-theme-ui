@@ -1,0 +1,63 @@
+
+//
+// Checkbox
+// -------------------------
+
+.input-checkbox {
+  &:active {
+    background-color: @background-color-info;
+  }
+  &:before,
+  &:after {
+    background-color: @base2;
+  }
+  &:checked {
+    background-color: @background-color-info;
+  }
+
+  &:indeterminate {
+    background-color: @background-color-info;
+  }
+}
+
+
+//
+// Radio
+// -------------------------
+
+.input-radio {
+  &:before {
+    background-color: @base2;
+  }
+  &:active {
+    background-color: @background-color-info;
+  }
+  &:checked {
+    background-color: @background-color-info;
+  }
+}
+
+
+//
+// Range (Slider)
+// -------------------------
+
+.input-range {
+  &::-webkit-slider-thumb {
+    background-color: @background-color-info;
+  }
+}
+
+
+//
+// Toggle
+// -------------------------
+
+.input-toggle {
+  &:checked {
+    background-color: @background-color-info;
+  }
+  &:before {
+    background-color: @base2;
+  }
+}

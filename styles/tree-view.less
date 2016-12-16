@@ -11,10 +11,31 @@
 }
 
 .tree-view {
-  color: @text-color;
+  color: @text-color-subtle;
   background-color: @tree-view-background-color;
 
-  .list-item.selected {
-    color: @text-color-selected;
+  .status-modified {
+      color: inherit;
   }
+
+  .directory.status-modified > .header,
+  .file.status-modified {
+      color: @text-color-warning;
+  }
+
+  .directory.selected {
+      color: inherit;
+  }
+
+  .directory.selected > .header,
+  .file.selected {
+      color: @text-color-selected;
+  }
+
+  .list-group .selected::before,
+  .list-tree .selected::before {
+      background-color: @tree-view-background-color;
+      border-left: 2px solid @background-color-info;
+  }
+
 }

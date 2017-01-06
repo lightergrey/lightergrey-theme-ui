@@ -8,18 +8,21 @@
 .tab-bar {
   background-color: @tab-bar-background-color;
   border-bottom: 1px solid @base-border-color;
+  overflow-y: hidden;
+  overflow-x: auto;
 
   .tab {
     color: @text-color-subtle;
     height: @tab-height;
+    max-width: 250px;
+    min-width: 130px;
     line-height: @tab-height;
-    font-size: @font-size;
+    font-size: @font-size--small;
     border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
     &.active {
       color: @text-color-selected;
       background-color: @tab-background-color-active;
-      border-left: 2px solid @background-color-info;
     }
 
 
@@ -32,6 +35,14 @@
     }
     &.modified:hover .close-icon {
       color: currentColor;
+    }
+
+    .status-added {
+        color: @green;
+    }
+
+    .status-modified {
+        color: @text-color-warning;
     }
 
 

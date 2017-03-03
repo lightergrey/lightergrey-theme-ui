@@ -18,7 +18,7 @@ atom-text-editor[mini] {
   }
 
   &, // <-- Deprecated. The `&,` can be removed once the Shadow DOM can't be turned off in the settings.
-  &::shadow {
+  &.editor {
     .placeholder-text {
       color: @base-background-color;
     }
@@ -29,6 +29,6 @@ atom-text-editor[mini] {
 }
 
 atom-text-editor[mini].is-focused .selection .region,
-atom-text-editor[mini].is-focused::shadow .selection .region {
+atom-text-editor[mini].is-focused.editor .selection .region {
     background-color: @background-color-selected;
 }
